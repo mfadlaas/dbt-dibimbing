@@ -5,8 +5,8 @@ WITH t_data AS (
   `Order ID` AS order_id, 
   Date AS date,
   Status AS status,
-  Qty,
-  Amount,
+  Qty AS qty,
+  Amount AS amount,
   {{ dbt_utils.generate_surrogate_key([
 				'SKU'
 			]) }} as product_id,
